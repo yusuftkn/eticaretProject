@@ -12,6 +12,7 @@ $slidersor->execute();
                 <div class="x_panel">
                     <div class="x_title">
                     <h2>Slider Listeleme
+                        <h1>HüSEYİN TEKİN</h1>
                         <small>
                             <?php
 
