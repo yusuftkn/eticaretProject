@@ -55,6 +55,16 @@ $slidercek=$slidersor->fetch(PDO::FETCH_ASSOC);
                     <br />
                     <form action= "../netting/islem.php" method="POST" enctype="multipart/form-detay" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                     <div class="form-group">
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Yüklü Resim <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <img width="300" src="../../<?php echo $slidercek['slider_resimyol']; ?>">
+                            </div>
+                        </div>
+
+
                         <label class="control-label col-md-3 col-sm-3 col-xs-12"  for="firs-name">Resim Seç <span class="required">*</span></label>
                         <div class="col-md-3 col-sm-3 col-xs-12">
                           <input type="file" id="firs-name" name="slider_resimyol" class="form-control col-md-7 col-xs-12">
@@ -64,7 +74,7 @@ $slidercek=$slidersor->fetch(PDO::FETCH_ASSOC);
                           <label class="control-label col-md-3 col-sm-3 col-xs-12" for="slider_ad">slider Ad <span class="required">*</span>
                           </label>
                           <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input type="text" id="slider_ad" name="slider_ad"  required="required" placeholder= "slider Adınızı Giriniz" class="form-control col-md-7 col-xs-12">
+                              <input type="text" id="slider_ad" name="slider_ad" value="<?php echo $slidercek['slider_ad'] ?>" required="required" placeholder= "slider Adınızı Giriniz" class="form-control col-md-7 col-xs-12">
                           </div>
                       </div>
                   
@@ -72,14 +82,14 @@ $slidercek=$slidersor->fetch(PDO::FETCH_ASSOC);
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="slider_ad">slider Link<span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="slider_link" name="slider_link"  required="required" placeholder= "slider Link Giriniz" class="form-control col-md-7 col-xs-12">
+                          <input type="text" id="slider_link" name="slider_link" value="<?php echo $slidercek['slider_link'] ?>" required="required" placeholder= "slider Link Giriniz" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="slider_sira">slider Sıra<span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="slider_sira" name="slider_sira" required="required" placeholder= "slider Sıra Giriniz" class="form-control col-md-7 col-xs-12">
+                          <input type="text" id="slider_sira" name="slider_sira" value="<?php echo $slidercek['slider_sira'] ?>" required="required" placeholder= "slider Sıra Giriniz" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="slider_durum">slider Durum<span class="required">*</span>
@@ -107,8 +117,11 @@ $slidercek=$slidersor->fetch(PDO::FETCH_ASSOC);
 
                           ?> -->
                           </select>
+                            <div>
+                             <div>
 
                           <input type="hidden" name="slider_id" value="<?php echo $slidercek['slider_id']  ?>">
+                          <input type="hidden" name="slider_resimyol" value="<?php echo $slidercek['slider_resimyol']  ?> "  >
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div align= "right" class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">

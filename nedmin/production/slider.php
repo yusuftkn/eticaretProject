@@ -12,7 +12,7 @@ $slidersor->execute();
                 <div class="x_panel">
                     <div class="x_title">
                     <h2>Slider Listeleme
-                        <h1>HüSEYİN TEKİN</h1>
+
                         <small>
                             <?php
 
@@ -54,17 +54,17 @@ $slidersor->execute();
                             <td><?php echo $slidercek['slider_sira'] ?></td>
                             <td>
                                 <center>
-                                <?php 
+                                <?php
                                 if($slidercek['slider_durum'] == 1) { ?>
-                                    <button class="btn btn-success btn-xs">Aktif</button>         
-                                <?php } else{ ?>                                                
-                                    <button class="btn btn-danger btn-xs">Pasif</button>          
-                                <?php }  ?> 
+                                    <button class="btn btn-success btn-xs">Aktif</button>
+                                <?php } else{ ?>
+                                    <button class="btn btn-danger btn-xs">Pasif</button>
+                                <?php }  ?>
                                 </center>
                             </td>
                             <td><center><a href="slider-duzenle.php?slider_id=<?php echo $slidercek['slider_id']; ?>"><button  class="btn btn-primary btn-xs">Düzenle</button></a></center></td>
-                            <td><center><a href="../netting/islem.php?slider_id=<?php echo $slidercek['slider_id']; ?>&slidersil=ok"><button class= "btn btn-danger btn-xs">Sil</button></a></center></td>
-                        
+                            <td><center><a href="../netting/islem.php?slider_id=<?php echo $slidercek['slider_id']; ?>&slidersil=ok&slider_resimyol=<?php echo $slidercek['slider_resimyol'] ?>" ><button class= "btn btn-danger btn-xs">Sil</button></a></center></td>
+
                         </tr>
                         <?php } ?>
                         </tbody>
@@ -75,4 +75,4 @@ $slidersor->execute();
         </div>
     </div>
     <!-- /page content -->
-  <?php include 'footer.php';  ?>     
+  <?php include 'footer.php';  ?>

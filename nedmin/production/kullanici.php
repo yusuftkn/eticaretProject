@@ -23,11 +23,11 @@ $kullanicisor->execute();
 
               <?php 
 
-              if ($_GET['durum']=="ok") {?>
+              if (isset($_GET['durum'])=="ok") {?>
 
               <b style="color:green;">İşlem Başarılı...</b>
 
-              <?php } elseif ($_GET['durum']=="no") {?>
+              <?php } elseif (isset($_GET['durum'])=="no") {?>
 
               <b style="color:red;">İşlem Başarısız...</b>
 

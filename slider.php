@@ -2,7 +2,7 @@
 	<div id="sync1" class="owl-carousel">
 
 
-		<?php 
+		<?php
 
 		$slidersor=$db->prepare("SELECT * FROM slider");
 		$slidersor->execute();
@@ -44,7 +44,7 @@
 	</div>
 </div>
 
-		Alt Bar 
+		Alt Bar
 
 
 		<div class="bar"></div>
@@ -87,4 +87,3 @@
 			</div>
 		</div>
 
-		

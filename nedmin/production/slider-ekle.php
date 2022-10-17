@@ -1,4 +1,4 @@
-<?php include 'header.php';  
+<?php include 'header.php';
 
 ?>
            <!-- page content -->
@@ -14,13 +14,13 @@
                     <h2>Slider Ekleme <small>
 
                     </small></h2>
-                 
+
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
                     <br />
 
-                    
+
 
 
                     <form action= "../netting/islem.php" method="POST" enctype="multipart/form-data" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
@@ -37,8 +37,8 @@
                               <input type="text" id="slider_ad" name="slider_ad"  required="required" placeholder= "slider Adınızı Giriniz" class="form-control col-md-7 col-xs-12">
                           </div>
                       </div>
-                  
-                    
+
+
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="slider_ad">slider Link<span class="required">*</span>
                         </label>
@@ -67,8 +67,8 @@
 
                           if($kullanicicek['kullanici_durum']==0){?>
                             <option value="0">Pasif</option>
-                            <option value="1">Aktif</option> 
-                          
+                            <option value="1">Aktif</option>
+
 
                           <?php } else {?>
                             <option value="1">Aktif</option>
@@ -81,7 +81,7 @@
 
                       <div class="ln_solid"></div>
                       <div class="form-group">
-                        <div align= "right" class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">           
+                        <div align= "right" class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                           <button type="submit" name="sliderkaydet" class="btn btn-success">Kaydet</button>
                         </div>
                       </div>
@@ -95,4 +95,4 @@
         </div>
         <!-- /page content -->
 
-  <?php include 'footer.php';  ?>     
+  <?php include 'footer.php';  ?>

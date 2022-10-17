@@ -62,16 +62,19 @@ if ($say==0) {
     <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
     <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
 
+      <!-- Dropzone.js -->
+
+      <link href="../vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+
+
+      <!-- Dropzone.js -->
+
+      <script src="../vendors/dropzone/dist/min/dropzone.min.js"></script>
     <!-- ck Editör -->
-   
-      <script src="//cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
-  
-
-
+   <script src="//cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
   </head>
-
   <body class="nav-md">
     <div class="container body">
       <div class="main_container">
@@ -80,9 +83,7 @@ if ($say==0) {
             <div class="navbar nav_title" style="border: 0;">
               <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
             </div>
-
             <div class="clearfix"></div>
-
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
@@ -94,15 +95,12 @@ if ($say==0) {
               </div>
             </div>
             <!-- /menu profile quick info -->
-
-            <br> 
-
+            <br>
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-
                   <li><a href="index.php"><i class="fa fa-home"></i> Anasayfa </a></li>
                   <li><a><i class="fa fa-cogs"></i> Site Ayarları <span class="fa fa-cogs"></span></a>
                     <ul class="nav child_menu">
@@ -111,28 +109,20 @@ if ($say==0) {
                       <li><a href="api-ayarlar.php">Api Ayarlar</a></li>
                       <li><a href="sosyal-ayarlar.php">Sosyal Ayarlar</a></li>
                       <li><a href="mail-ayarlar.php">Mail Ayarlar</a></li>
+                    </ul>
+                  </li>
                   <li><a href="hakkimizda.php"><i class="fa fa-info"></i> Hakkimizda </a></li>
                   <li><a href="kullanici.php"><i class="fa fa-user"></i> Kullanıcılar </a></li>
                   <li><a href="urun.php"><i class="fa fa-shopping-basket"></i> Ürünler </a></li>
                   <li><a href="menu.php"><i class="fa fa-list"></i> Menü </a></li>
                   <li><a href="kategori.php"><i class="fa fa-list"></i> Kategoriler </a></li>
                   <li><a href="slider.php"><i class="fa fa-image"></i> Slider </a></li>
-                 
-
-
-                  
-                   
-                   
-                    </ul>
-                  </li> 
-                                                                          
+                  <li><a href="yorum.php"><i class="fa fa-comments"></i> Yorumlar </a></li>
+                  <li><a href="banka.php"><i class="fa fa-bank"></i> Banka </a></li>
                 </ul>
               </div>
-              
-
             </div>
             <!-- /sidebar menu -->
-
             <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
               <a data-toggle="tooltip" data-placement="top" title="Settings">
