@@ -1027,9 +1027,7 @@ if (isset($_POST['kullanicisifreguncelle'])) {
 		//eski şifre doğruysa başla
 		if ($kullanici_passwordone==$kullanici_passwordtwo) {
 
-
 			if (strlen($kullanici_passwordone)>=6) {
-
 
 				//md5 fonksiyonu şifreyi md5 şifreli hale getirir.
 				$password=md5($kullanici_passwordone);
@@ -1045,16 +1043,11 @@ if (isset($_POST['kullanicisifreguncelle'])) {
 				));
 
 				if ($insert) {
-
-
 					header("Location:../../sifre-guncelle.php?durum=sifredegisti");
-
 
 					//Header("Location:../production/genel-ayarlar.php?durum=ok");
 
 				} else {
-
-
 					header("Location:../../sifre-guncelle.php?durum=no");
 				}
 
@@ -1062,9 +1055,7 @@ if (isset($_POST['kullanicisifreguncelle'])) {
 
 			} else {
 
-
 				header("Location:../../sifre-guncelle.php?durum=eksiksifre");
-
 
 			}
 
